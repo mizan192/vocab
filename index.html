@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRE Word Practice</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 GRE Word Practice</h1>
+  </header>
+
+  <main>
+    <!-- Search Section -->
+    <section class="search-section">
+      <input type="text" id="search" placeholder="🔍 Type a word to search..." />
+      <div id="result"></div>
+    </section>
+
+    <!-- Add Word Section -->
+    <section class="add-section">
+      <h2>Add a New Word</h2>
+      <input type="text" id="word" placeholder="Word" />
+      <input type="text" id="meaning" placeholder="Meaning" />
+      <input type="text" id="synonyms" placeholder="Synonyms (comma-separated)" />
+      <input type="text" id="antonyms" placeholder="Antonyms (comma-separated)" />
+      <select id="tone">
+        <option value="positive">🟢 Positive</option>
+        <option value="neutral">🟡 Neutral</option>
+        <option value="negative">🔴 Negative</option>
+      </select>
+      <button id="addBtn">➕ Add Word</button>
+    </section>
+
+    <!-- Export/Import -->
+    <section class="backup-section">
+      <button id="exportBtn">⬇ Export Words</button>
+      <input type="file" id="importFile" />
+      <button id="importBtn">⬆ Import Words</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ for GRE Practice</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
